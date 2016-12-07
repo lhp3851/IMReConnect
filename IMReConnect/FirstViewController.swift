@@ -8,8 +8,11 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController ,UITableViewDelegate{
 
+    var tableView :UITableView?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title="好友列表"
@@ -21,13 +24,16 @@ class FirstViewController: UIViewController {
     func setUpPannel() -> Void {
         view.backgroundColor=UIColor.white
 
+        tableView=UITableView(frame: view.frame, style: UITableViewStyle.plain)
+        tableView?.delegate=self;
+        
         let frame  = CGRect.init(x: 15, y: 74, width: 60, height: 40)
         let button = UIButton.init(frame: frame)
         button.frame(forAlignmentRect: frame)
         button.backgroundColor=UIColor.black
         button.titleLabel?.font=UIFont.systemFont(ofSize: 14)
-        button .setTitle("Second", for: UIControlState.normal)
-        button .addTarget(self, action: #selector(FirstViewController.goToSecondVC), for: UIControlEvents.touchUpInside);//
+        button.setTitle("Second", for: UIControlState.normal)
+        button.addTarget(self, action: #selector(FirstViewController.goToSecondVC), for: UIControlEvents.touchUpInside);//
         view.addSubview(button);
     }
     
