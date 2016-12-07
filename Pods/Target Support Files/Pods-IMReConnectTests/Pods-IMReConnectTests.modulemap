@@ -1,0 +1,6 @@
+framework module Pods_IMReConnectTests {
+  umbrella header "Pods-IMReConnectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
