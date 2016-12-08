@@ -9,16 +9,25 @@
 import UIKit
 
 class RegisteAccountViewController: UIViewController, didClickViewDelegate {
+    internal func loginViewDelegate(sender: Any) {
+         print("登录：sender\(sender)");
+    }
 
+
+    func registViewDelegate(sender: Any) {
+        print("注册：sender\(sender)");
+        let loginVC :LoginViewController=LoginViewController();
+        self.navigationController?.pushViewController(loginVC, animated: true)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title="注册";
         setUpPannel();
     }
 
-    func registViewDelegate(sender: Any) {
-        print("");
-    }
+    
     
     func setUpPannel () {
         view.backgroundColor=UIColor.white;

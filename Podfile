@@ -15,7 +15,7 @@ target 'IMReConnect' do
     pod 'SDWebImage', '~>3.8'
     pod 'MJExtension'
     pod 'UMengAnalytics-NO-IDFA'
-    pod 'AFNetworking', '~> 3.0' 
+    pod 'Alamofire', '~> 4.0'
     pod 'MBProgressHUD', '~> 0.9.2'
   end
 

@@ -16,6 +16,10 @@
 		134BA8851DF7A9DE00122E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 134BA8831DF7A9DE00122E53 /* LaunchScreen.storyboard */; };
 		134BA8901DF7A9DE00122E53 /* IMReConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134BA88F1DF7A9DE00122E53 /* IMReConnectTests.swift */; };
 		134BA89B1DF7A9DE00122E53 /* IMReConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134BA89A1DF7A9DE00122E53 /* IMReConnectUITests.swift */; };
+		139F8A861DF8FD780002A9DE /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F8A851DF8FD780002A9DE /* HTTPTool.swift */; };
+		139F8A8A1DF906700002A9DE /* IMReConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 139F8A891DF906700002A9DE /* IMReConnect.m */; };
+		139F8A8F1DF938A20002A9DE /* RegisteXMPPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139F8A8E1DF938A20002A9DE /* RegisteXMPPViewController.m */; };
+		139F8A941DF939390002A9DE /* AccountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 139F8A931DF939390002A9DE /* AccountView.m */; };
 		3BE4E78AEC6C202D774DCAAF /* Pods_IMReConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E89847F3F5F874856F1D3C /* Pods_IMReConnectUITests.framework */; };
 		7AEE02411DF8389800EFE1A5 /* RegisteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE02401DF8389800EFE1A5 /* RegisteAccountViewController.swift */; };
 		7AEE02431DF8390B00EFE1A5 /* RegisteAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEE02421DF8390B00EFE1A5 /* RegisteAccountView.swift */; };
@@ -57,6 +61,14 @@
 		134BA8961DF7A9DE00122E53 /* IMReConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMReConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		134BA89A1DF7A9DE00122E53 /* IMReConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMReConnectUITests.swift; sourceTree = "<group>"; };
 		134BA89C1DF7A9DE00122E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139F8A851DF8FD780002A9DE /* HTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
+		139F8A871DF9066F0002A9DE /* IMReConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMReConnect-Bridging-Header.h"; sourceTree = "<group>"; };
+		139F8A881DF906700002A9DE /* IMReConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMReConnect.h; sourceTree = "<group>"; };
+		139F8A891DF906700002A9DE /* IMReConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMReConnect.m; sourceTree = "<group>"; };
+		139F8A8D1DF938A20002A9DE /* RegisteXMPPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisteXMPPViewController.h; sourceTree = "<group>"; };
+		139F8A8E1DF938A20002A9DE /* RegisteXMPPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisteXMPPViewController.m; sourceTree = "<group>"; };
+		139F8A921DF939390002A9DE /* AccountView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountView.h; sourceTree = "<group>"; };
+		139F8A931DF939390002A9DE /* AccountView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountView.m; sourceTree = "<group>"; };
 		1DCA62E0BAF36D6128BC19A0 /* Pods-IMReConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-IMReConnect/Pods-IMReConnect.release.xcconfig"; sourceTree = "<group>"; };
 		35D560E8B7CE963EABDB91F8 /* Pods-IMReConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMReConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IMReConnect/Pods-IMReConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		4CE31E6F4099B91F4C9FE099 /* Pods_IMReConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IMReConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +115,7 @@
 		134BA86C1DF7A9DE00122E53 = {
 			isa = PBXGroup;
 			children = (
+				139F8A8B1DF906800002A9DE /* Objective-C */,
 				134BA8771DF7A9DE00122E53 /* IMReConnect */,
 				134BA88E1DF7A9DE00122E53 /* IMReConnectTests */,
 				134BA8991DF7A9DE00122E53 /* IMReConnectUITests */,
@@ -125,6 +138,7 @@
 		134BA8771DF7A9DE00122E53 /* IMReConnect */ = {
 			isa = PBXGroup;
 			children = (
+				139F8A841DF8FC950002A9DE /* HTTPTool */,
 				7AEE023A1DF837CF00EFE1A5 /* Account */,
 				134BA8781DF7A9DE00122E53 /* AppDelegate.swift */,
 				134BA87A1DF7A9DE00122E53 /* FirstViewController.swift */,
@@ -157,6 +171,36 @@
 			path = IMReConnectUITests;
 			sourceTree = "<group>";
 		};
+		139F8A841DF8FC950002A9DE /* HTTPTool */ = {
+			isa = PBXGroup;
+			children = (
+				139F8A851DF8FD780002A9DE /* HTTPTool.swift */,
+			);
+			name = HTTPTool;
+			sourceTree = "<group>";
+		};
+		139F8A8B1DF906800002A9DE /* Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				139F8A8C1DF9385F0002A9DE /* Registe */,
+				139F8A881DF906700002A9DE /* IMReConnect.h */,
+				139F8A891DF906700002A9DE /* IMReConnect.m */,
+				139F8A871DF9066F0002A9DE /* IMReConnect-Bridging-Header.h */,
+			);
+			name = "Objective-C";
+			sourceTree = "<group>";
+		};
+		139F8A8C1DF9385F0002A9DE /* Registe */ = {
+			isa = PBXGroup;
+			children = (
+				139F8A8D1DF938A20002A9DE /* RegisteXMPPViewController.h */,
+				139F8A8E1DF938A20002A9DE /* RegisteXMPPViewController.m */,
+				139F8A921DF939390002A9DE /* AccountView.h */,
+				139F8A931DF939390002A9DE /* AccountView.m */,
+			);
+			name = Registe;
+			sourceTree = "<group>";
+		};
 		52C26AAA3CDE0C2D379D9164 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,18 +219,18 @@
 			children = (
 				7AEE023D1DF837FA00EFE1A5 /* Logout */,
 				7AEE023C1DF837EF00EFE1A5 /* Login */,
-				7AEE023B1DF837DB00EFE1A5 /* Regist */,
+				7AEE023B1DF837DB00EFE1A5 /* Registe */,
 			);
 			name = Account;
 			sourceTree = "<group>";
 		};
-		7AEE023B1DF837DB00EFE1A5 /* Regist */ = {
+		7AEE023B1DF837DB00EFE1A5 /* Registe */ = {
 			isa = PBXGroup;
 			children = (
 				7AEE02401DF8389800EFE1A5 /* RegisteAccountViewController.swift */,
 				7AEE02421DF8390B00EFE1A5 /* RegisteAccountView.swift */,
 			);
-			name = Regist;
+			name = Registe;
 			sourceTree = "<group>";
 		};
 		7AEE023C1DF837EF00EFE1A5 /* Login */ = {
@@ -292,6 +336,7 @@
 					134BA8741DF7A9DE00122E53 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 622A9GB38Y;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					134BA88A1DF7A9DE00122E53 = {
@@ -501,10 +546,14 @@
 				7AEE024A1DF851DD00EFE1A5 /* LoginViewController.swift in Sources */,
 				7AEE02411DF8389800EFE1A5 /* RegisteAccountViewController.swift in Sources */,
 				134BA87D1DF7A9DE00122E53 /* SecondViewController.swift in Sources */,
+				139F8A8F1DF938A20002A9DE /* RegisteXMPPViewController.m in Sources */,
+				139F8A941DF939390002A9DE /* AccountView.m in Sources */,
 				134BA8791DF7A9DE00122E53 /* AppDelegate.swift in Sources */,
 				7AEE02481DF8464600EFE1A5 /* IMReConnect.swift in Sources */,
 				7AEE02431DF8390B00EFE1A5 /* RegisteAccountView.swift in Sources */,
+				139F8A8A1DF906700002A9DE /* IMReConnect.m in Sources */,
 				134BA87B1DF7A9DE00122E53 /* FirstViewController.swift in Sources */,
+				139F8A861DF8FD780002A9DE /* HTTPTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +706,7 @@
 			baseConfigurationReference = 35D560E8B7CE963EABDB91F8 /* Pods-IMReConnect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 622A9GB38Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMReConnect/IMReConnect.pch";
@@ -664,6 +714,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lhp3851.IMReConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IMReConnect-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -673,6 +725,7 @@
 			baseConfigurationReference = 1DCA62E0BAF36D6128BC19A0 /* Pods-IMReConnect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 622A9GB38Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/IMReConnect/IMReConnect.pch";
@@ -680,6 +733,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lhp3851.IMReConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IMReConnect-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

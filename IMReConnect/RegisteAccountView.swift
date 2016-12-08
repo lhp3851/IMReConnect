@@ -45,7 +45,7 @@ class RegisteAccountView: UIView  {
         password.placeholder="密码";
         
         let registButton = UIButton(type: UIButtonType.custom)
-        registButton.frame=CGRect(x: 15, y: password.frame.maxY+15, width: SCREEN_WIDTH-50, height: 40)
+        registButton.frame=CGRect(x: 25, y: password.frame.maxY+15, width: SCREEN_WIDTH-50, height: 40)
         registButton.backgroundColor=UIColor.brown;
         if viewType==ViewType.LoginViewType {
             registButton.setTitle("登录", for: UIControlState.normal)
@@ -65,12 +65,11 @@ class RegisteAccountView: UIView  {
     
     func registAccount(sender:Any) -> Void {
         if viewType==ViewType.LoginViewType {
-            print("登录\(sender)");
             
             delegate?.loginViewDelegate(sender: sender)
         }
         else{
-            print("注册:%@",sender);
+            
             delegate?.registViewDelegate(sender: sender)
         }
     }

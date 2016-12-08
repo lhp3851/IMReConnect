@@ -9,8 +9,8 @@
 #ifndef IMReConnect_pch
 #define IMReConnect_pch
 
-#define SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
-#define SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width// UIScreen.mainScreen().bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height// UIScreen.mainScreen().bounds.size.height
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
